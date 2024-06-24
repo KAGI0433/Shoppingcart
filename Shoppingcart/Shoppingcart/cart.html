@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>cart</title>
+</head>
+<body>
+  <div class="container">
+    <div class="menu">
+      <div class="logo">
+        LEMME <span>Gummies</span>
+      </div>
+      <ul>
+        <li class="active"><i class="fa-solid fa-house"></i>Home</li>
+        <li><i class="fa-solid fa-user"></i>User</li>
+        <li><i class="fa-solid fa-heart"></i>Favourites</li>
+      </ul><ul>
+        <li><i class="fa-brands fa-facebook"></i>Facebook</li>
+        <li><i class="fa-brands fa-twitter"></i>Twitter</li>
+        <li><i class="fa-brands fa-instagram"></i>Favourites</li>
+      </ul>
+
+    </div>
+    <div class="center">
+      <div class="search">
+        <div class="form">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="search...">
+          <button>Search</button>
+        </div>
+      </div>
+      <h2>PRODUCTS</h2>
+      <div class="list">
+        <div class="item" data-key="1" id="product1">
+          <div class="img">
+            <img src="images/burn.jpg" alt="">
+          </div>
+          <div class="content">
+            <div class="title">Lemme Burn</div>
+            <div class="des">
+              Lemme Burn capsules are scientifically formulated to activate metabolism
+            </div>
+            <div class="price">R52.99</div>
+            <input type="number" class="count" min="1" value="1">
+             <button class="add"> Add to cart</button>
+             <button class="remove" onclick="Remove(1)"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+
+        <div class="item" data-key="2">
+          <div class="img">
+            <img src="images/debloat.jpg" alt="">
+          </div>
+          <div class="content">
+            <div class="title">Lemme Debloat</div>
+            <div class="des">
+              Debloat Daily Digestive Gummies
+            </div>
+            <div class="price">R58.99</div>
+            <input type="number" class="count" min="1" value="1">
+             <button class="add"> Add to cart</button>
+             <button class="remove"onclick="Remove(2)"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+        
+        <div class="item" data-key="3">
+          <div class="img">
+            <img src="images/focus.jpg" alt="">
+          </div>
+          <div class="content">
+            <div class="title">Lemme Focus</div>
+            <div class="des">
+            Lemme Focus Concentration and Brain Health Gummies improve daily focus.
+            </div>
+            <div class="price">R79.99</div>
+            <input type="number" class="count" min="1" value="1">
+             <button class="add"> Add to cart</button>
+             <button class="remove"onclick="Remove(3)"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+
+        <div class="item" data-key="4">
+          <div class="img">
+            <img src="images/glow.jpg" alt="">
+          </div>
+          <div class="content">
+            <div class="title">Lemme Glow</div>
+            <div class="des">
+            Lemme Glow gummies are scientifically formulated to promote skin, hair and nail health.
+            </div>
+            <div class="price">R52.99</div>
+            <input type="number" class="count" min="1" value="1">
+             <button class="add"> Add to cart</button>
+             <button class="remove"onclick="Remove(4)"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    <div class="cart">
+      <div class="name">CART</div>
+     <div  class="cart-content">
+      <div class="cart-box"> </div>
+      
+      <div class="listCart">
+        <div class="item">
+      </div>
+      
+    </div>
+  </div>
+  <!--link to js-->
+<script src="cart.js"></script>
+ <script src="index.js"></script>
+</body>
+</html>
